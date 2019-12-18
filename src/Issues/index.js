@@ -18,7 +18,9 @@ class Issues extends React.Component {
   }
 
   renderIssues() {
-    return this.state.issues.map(issue => <Issue {...issue} />);
+    return this.state.issues.map(issue => (
+      <Issue key={issue.number} {...issue} />
+    ));
   }
 
   render() {
