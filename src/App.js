@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <h1>Rails issues</h1>
-      <Issues path="/" />
+      <Issues />
     </div>
   );
 }
