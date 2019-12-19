@@ -26,6 +26,7 @@ class Issues extends React.Component {
   render() {
     return (
       <div>
+        <h1>Rails issues</h1>
         <h2>Open issues</h2>
         {this.renderIssues()}
       </div>

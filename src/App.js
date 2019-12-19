@@ -3,6 +3,8 @@ import "./App.css";
 
 import Issues from "./Issues";
 
+import { Router } from "@reach/router";
+
 import axios from "axios";
 const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
 axios.defaults.auth = {
@@ -13,8 +15,9 @@ axios.defaults.auth = {
 function App() {
   return (
     <div>
-      <h1>Rails issues</h1>
-      <Issues />
+      <Router>
+        <Issues path="/" />
+      </Router>
     </div>
   );
 }
